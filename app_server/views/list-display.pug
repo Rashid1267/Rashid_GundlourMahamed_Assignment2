@@ -1,0 +1,16 @@
+extend layout
+
+block content
+    .container
+        .row.banner 
+            h1(style= "margin-top:30px") #{title}
+        table.table.table-hover
+            thead
+            tr
+                th Book Name
+                th Author
+            tbody
+                each book in list
+                    tr
+                        td #{book.name}
+                        td #{book.Author}
